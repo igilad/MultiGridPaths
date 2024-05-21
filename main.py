@@ -6,6 +6,6 @@ from experiments import *
 from simple_problem import *
 
 if __name__ == '__main__':
-    coarsen_benchmark_exp()
+    random_path_exp()
 
 

@@ -72,3 +72,14 @@ def coarsen_benchmark_exp():
         accuracies_n += [np.array(accuracies).mean()]
     plot_line_graph(n_range,accuracies_n,"Coarsen Benchmark", "Coarse")
 
+def connect_points_exp():
+    points = [[1,1], [3,3], [5,5]]
+    path = connect_points(points)
+    print(path)
+    plot_paths([path])
+
+def random_path_exp():
+    np.random.seed(2209)
+    map_size = 8
+    paths = [create_random_step_path([1,1],[map_size,map_size], map_size,1) for i in range(5)]
+    plot_paths(paths)
